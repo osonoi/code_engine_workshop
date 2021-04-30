@@ -57,7 +57,7 @@ IBM CLoudにログインしてイメージをアップしましょう。
 ```
 $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
-$ ibmcloud login -g Default
+$ ibmcloud target -g Default
 （人によってはエラーが出る場合があります。その時は　-g default で試してみてください）
 $ ibmcloud cr login
 (コンテナーレジストリーにログイン)
