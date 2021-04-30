@@ -49,6 +49,8 @@ Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあ�
 $ docker build -t jp.icr.io/code_engine_ns/language-translator-nodejs .
 (jp.icr.ioはロケーション、code_engine_nsはこの後に作成するネームスペースです）
 ```
+
+```
 $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
 $ ibmcloud login -g Default
@@ -60,6 +62,7 @@ $ ibmcloud cr namespace-add code_engine_ns
 $ docker push jp.icr.io/code_engine_ns/language-translator-nodejs
 （イメージをアップロード、プッシュ）
 ```
+
 <img src="images/image_push.png" width="640px">
 
 ## DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
