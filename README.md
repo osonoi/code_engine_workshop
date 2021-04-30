@@ -7,17 +7,23 @@
 2.Dockerのインストール<br>
 　Windows:　http://docs.docker.jp/v1.12/windows/step_one.html<br>
 　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac<br>
+<img src="images/code-engine.png" width="640px">
 
 ##
 内容
 Code-EngineにWatson Translatorを使った翻訳アプリをデプロイします。
-
+<img src="images/code-engine2.png" width="640px">
 手順
 1. Watson Translation サービスの作成
 2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
 3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
 
 ## 1. Watson Translationサービスの作成
+<img src="images/LT1.png" width="640px">
+
+<img src="images/LT2.png" width="640px">
+
+<img src="images/LT3.png" width="640px">
 
 ## ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
 ソースコードをご自分のPCにクローンしてください
@@ -53,3 +59,27 @@ $ ibmcloud cr namespace-add code_engine_ns
 $ docker push jp.icr.io/code_engine_ns/language-translator-nodejs
 （イメージをアップロード、プッシュ）
 ```
+<img src="images/image_push.png" width="640px">
+
+## DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
+
+<img src="images/deploy1.png" width="640px">
+
+<img src="images/deploy2.png" width="640px">
+
+<img src="images/deploy3.png" width="640px">
+
+<img src="images/deploy4.png" width="640px">
+
+<img src="images/deploy5.png" width="640px">
+
+<img src="images/deploy6.png" width="640px">
+
+<img src="images/deploy7.png" width="640px">
+
+<img src="images/deploy8.png" width="640px">
+
+<img src="images/deploy9.png" width="640px">
+
+<img src="images/deploy10.png" width="640px">
+
