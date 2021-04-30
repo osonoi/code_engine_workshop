@@ -4,6 +4,9 @@
 1.IBM Cloud アカウント作成<br>
 　IBM Cloud Code Engineを使用するためにはIBM Cloudの標準アカウントが必要になります。（要クレジットカードの登録）<br>
 　また実際に稼働するアプリによっては課金されますのでご注意ください。<br>
+ Code Engineの料金：　https://cloud.ibm.com/docs/codeengine?topic=codeengine-pricing　<br>
+<img src="images/price.png" width="640px">
+
 2.Dockerのインストール<br>
 　Windows:　http://docs.docker.jp/v1.12/windows/step_one.html<br>
 　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac<br>
