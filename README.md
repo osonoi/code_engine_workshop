@@ -7,10 +7,12 @@
 2.Dockerのインストール<br>
 　Windows:　http://docs.docker.jp/v1.12/windows/step_one.html<br>
 　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac<br>
+3.IBM Cloud CLIのインストール<br>
+  こちらからインストールしてください。　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja
+
 <img src="images/code-engine.png" width="640px">
 
-##
-内容
+## ワークショップ内容
 Code-EngineにWatson Translatorを使った翻訳アプリをデプロイします。
 <img src="images/code-engine2.png" width="640px">
 手順
@@ -19,11 +21,11 @@ Code-EngineにWatson Translatorを使った翻訳アプリをデプロイしま�
 3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
 
 ## 1. Watson Translationサービスの作成
-
+ibmcloud (https://cloud.ibm.com) にログインして以下のように”カタログ”、”サービス”、”AI/Machine learning",と選んででてくる”Language Translator"をクリックしてください。
 <img src="images/LT1.png" width="640px">
-
+無料のプランが選択されているのを確認して”作成”でサービスを作成しtください。
 <img src="images/LT2.png" width="640px">
-
+サービスが作成されたら認証情報、APIKeyを取得します。API鍵の右側をクリックするとAPI鍵がクリップボードにコピーされます。年のためにメモ帳か何かに入力しておくといいでしょう。
 <img src="images/LT3.png" width="640px">
 
 ## ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
