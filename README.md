@@ -19,6 +19,7 @@ Code-EngineにWatson Translatorを使った翻訳アプリをデプロイしま�
 3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
 
 ## 1. Watson Translationサービスの作成
+
 <img src="images/LT1.png" width="640px">
 
 <img src="images/LT2.png" width="640px">
