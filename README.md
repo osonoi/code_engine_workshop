@@ -25,7 +25,7 @@ Code-EngineにWatson Translatorを使った翻訳アプリをデプロイしま�
 $ git clone https://github.com/osonoi/language-translator-nodejs
 $ cd language-translator-nodejs
 ```
-手順１でメモをしたAPIキーを設定します。
+手順１でメモをしたAPIキーを設定します。まずは設定ファイルの準備をします。
 ```
 cp .env.example .env
 ```
@@ -37,4 +37,19 @@ $ cat .env
 LANGUAGE_TRANSLATOR_URL=https://gateway.watsonplatform.net/language-translator/api
 LANGUAGE_TRANSLATOR_IAM_APIKEY=S****************************************Tjz
 ```
-
+Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあげるためのタグをつけます。
+```
+$ docker build -t jp.icr.io/code_engine_ns/language-translator-nodejs .
+(jp.icr.ioはロケーション、code_engine_nsはこの後に作成するネームスペースです）
+```
+$ ibmcloud login -r jp-tok
+(ログイン用のe-mailアドレス、パスワードを入力してください）
+$ ibmcloud login -g Default
+（人によってはエラーが出る場合があります。その時は　-g default で試してみてください）
+$ ibmcloud cr login
+(コンテナーレジストリーにログイン)
+$ ibmcloud cr namespace-add code_engine_ns
+(ネームスペースの作成)
+$ docker push jp.icr.io/code_engine_ns/language-translator-nodejs
+（イメージをアップロード、プッシュ）
+```
