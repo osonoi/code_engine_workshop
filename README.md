@@ -59,6 +59,7 @@ $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
 $ ibmcloud target -g Default
 （人によってはエラーが出る場合があります。その時は　-g default で試してみてください）
+$ ibmcloud plugin install container-registry (必要に応じて）
 $ ibmcloud cr login
 (コンテナーレジストリーにログイン)
 $ ibmcloud cr namespace-add code_engine_ns
