@@ -22,5 +22,19 @@ Code-EngineにWatson Translatorを使った翻訳アプリをデプロイしま�
 ## ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
 ソースコードをご自分のPCにクローンしてください
 ```
-$
+$ git clone https://github.com/osonoi/language-translator-nodejs
+$ cd language-translator-nodejs
 ```
+手順１でメモをしたAPIキーを設定します。
+```
+cp .env.example .env
+```
+.envを編集してください。LANGUAGE_TRANSLATOR_IAM_APIKEY=の後に手順１で取得したAPI Keyを入れてください。
+記入例
+```
+$ cat .env
+# see https://cloud.ibm.com/docs/watson?topic=watson-iam
+LANGUAGE_TRANSLATOR_URL=https://gateway.watsonplatform.net/language-translator/api
+LANGUAGE_TRANSLATOR_IAM_APIKEY=S****************************************Tjz
+```
+
