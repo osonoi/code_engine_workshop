@@ -9,9 +9,9 @@
 
 2.Dockerのインストール<br>
 　Windows:　http://docs.docker.jp/v1.12/windows/step_one.html<br>
-　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac<br>
+　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac  <br>
 3.IBM Cloud CLIのインストール<br>
-  こちらからインストールしてください。　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja
+  こちらからインストールしてください。　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja  <br>
 4.Docker Hubのアカウント作成(IBM Cloudのコンテナーレジストリーを使用する場合は必要ありません）
 　こちらからDockerHubのアカウントを作成(Sign up)してください。
  https://hub.docker.com/signup
