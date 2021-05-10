@@ -94,33 +94,43 @@ $ docker push (Dockerのアカウント名)/language-translator-nodejs
 ## 3. アップロードしたDockerイメージでCode Engineを稼働させる
 
 検索でcode engineと入力してください。Code Engineが出てきたらクリック
+
 <img src="images/deploy1.png" width="640px">
 
 今回はコンテナーイメージの実行でやります。
+
 <img src="images/deploy2.png" width="640px">
 
 最初にプロジェクトを作成します。
+
 <img src="images/deploy3.png" width="640px">
 
 プロジェクトの詳細を入力します。名前は任意でいいです。
+
 <img src="images/deploy4.png" width="640px">
 
 プロジェクトができたら次はイメージ（先程アップした）の指定です。
+
 <img src="images/deploy5.png" width="640px">
 
 先程アップした時の情報を選択してください。終わったら完了をクリック
+
 <img src="images/deploy6.png" width="640px">
 
 アプリ作成の準備ができました。右下の作成をクリック
+
 <img src="images/deploy7.png" width="640px">
 
 しばらくすると作成完了です。”アプリケーションURLを開く”をクリックしてアプリを開きましょう。
+
 <img src="images/deploy8.png" width="640px">
 
 こらがアプリ画面です。
+
 <img src="images/deploy9.png" width="640px">
 
 いろんな翻訳を試してみてください。
+
 <img src="images/deploy10.png" width="640px">
 
 お疲れ様でした！
