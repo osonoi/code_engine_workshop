@@ -52,9 +52,10 @@ LANGUAGE_TRANSLATOR_URL=https://gateway.watsonplatform.net/language-translator/a
 LANGUAGE_TRANSLATOR_IAM_APIKEY=S****************************************Tjz
 ```
 Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあげるためのタグをつけます。
+ここでは日本のデータセンター(jp.icr.io)にネームスペースを作成してそこにイメージをアップロードいたします。
+ネームスペース名はデータセンター内で他のユーザーも含めて唯一の他と重複しないユニークなものでなければいけません。（ご自分の名前＋日付とかがおすすめです）
 ```
-$ docker build -t jp.icr.io/code_engine_ns/language-translator-nodejs .
-(jp.icr.ioはロケーション、code_engine_nsはこの後に作成するネームスペースです）
+$ docker build -t jp.icr.io/(任意のネームスペース名)/language-translator-nodejs .
 ```
 IBM CLoudにログインしてイメージをアップしましょう。
 ```
@@ -67,7 +68,7 @@ $ ibmcloud cr login
 (コンテナーレジストリーにログイン)
 $ ibmcloud cr namespace-add code_engine_ns
 (ネームスペースの作成)
-$ docker push jp.icr.io/code_engine_ns/language-translator-nodejs
+$ docker push jp.icr.io/(任意のネームスペース名)/language-translator-nodejs
 （イメージをアップロード、プッシュ）
 ```
 
