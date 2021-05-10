@@ -21,7 +21,10 @@
 ## ワークショップ内容
 Code-EngineにWatson Translatorを使った翻訳アプリをデプロイします。
 <img src="images/code-engine2.png" width="640px">
-手順
+
+(Docker イメージをIBM CLoud container レジストリーではなくDocker HubにアップロードしてCode Engineでデプロイすることもできます。その場合はDockerHubのアカウントが必要になります）
+
+## 手順
 1. Watson Translation サービスの作成
 2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
 3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
