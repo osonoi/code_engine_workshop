@@ -67,7 +67,7 @@ Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあ�
 ```
 $ docker build -t jp.icr.io/(任意のネームスペース名)/language-translator-nodejs .
 ```
-IBM CLoudにログインしてイメージをアップしましょう。(Docker Hubにアップする場合はここは飛ばしてDockerHubにアップロードするを選択してください）
+IBM CLoudにログインしてイメージをアップする。(Docker Hubにアップする場合はここは飛ばしてDockerHubにアップロードするを選択してください）
 ```
 $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
@@ -98,7 +98,7 @@ $ docker tag $(docker images jp.icr.io/(任意のネームスペース名)/langu
 $ docker build -t (Dockerのアカウント名)/language-translator-nodejs .
 
 $ docker push (Dockerのアカウント名)/language-translator-nodejs
-
+(DOckerイメージをDocker Hubにアップロードします)
 ```
 
 ## 3. アップロードしたDockerイメージでCode Engineを稼働させる
