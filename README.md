@@ -13,7 +13,8 @@
 3.IBM Cloud CLIのインストール<br>
   こちらからインストールしてください。　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja  <br>
 4.Docker Hubのアカウント作成(IBM Cloudのコンテナーレジストリーを使用する場合は必要ありません）
-　こちらからDockerHubのアカウントを作成(Sign up)してください。
+
+こちらからDockerHubのアカウントを作成(Sign up)してください。
  https://hub.docker.com/signup
 
 <img src="images/code-engine.png" width="640px">
