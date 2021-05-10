@@ -121,6 +121,12 @@ $ docker push (Dockerのアカウント名)/language-translator-nodejs
 
 <img src="images/docker.png" width="640px">
 
+最後に環境変数を設定します。管渠変数は２つ
+LANGUAGE_TRANSLATOR_URL、LANGUAGE_TRANSLATOR_IAM_APIKEY　です。
+LANGUAGE_TRANSLATOR_URLにはhttps://gateway.watsonplatform.net/language-translator/api
+LANGUAGE_TRANSLATOR_IAM_APIKEY　には　手陣１で取得したAPI Keyを入れます。
+
+<img src="images/env.png" width="640px">
 
 アプリ作成の準備ができました。右下の作成をクリック
 
