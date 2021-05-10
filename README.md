@@ -26,8 +26,8 @@ Code-EngineにWatson Translatorを使った翻訳アプリをデプロイしま�
 
 ## 手順
 1. Watson Translation サービスの作成
-2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
-3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
+2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成、DockerイメージをIBM CLoud（またはDocker Hub)にアップロード
+3. アップロードしたDockerイメージでCode Engineを稼働させる
 
 ## 1. Watson Translationサービスの作成
 ibmcloud (https://cloud.ibm.com) にログインして以下のように”カタログ”、”サービス”、”AI/Machine learning",と選んで出てくる”Language Translator"をクリックしてください。
