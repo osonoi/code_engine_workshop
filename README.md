@@ -61,13 +61,14 @@ $ cat .env
 LANGUAGE_TRANSLATOR_URL=https://gateway.watsonplatform.net/language-translator/api
 LANGUAGE_TRANSLATOR_IAM_APIKEY=S****************************************Tjz
 ```
+＊IBM Cloudにイメージをアップロードする場合
 Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあげるためのタグをつけます。
 ここでは日本のデータセンター(jp.icr.io)にネームスペースを作成してそこにイメージをアップロードいたします。
 ネームスペース名はデータセンター内で他のユーザーも含めて唯一の他と重複しないユニークなものでなければいけません。（ご自分の名前＋日付とかがおすすめです）
 ```
 $ docker build -t jp.icr.io/(任意のネームスペース名)/language-translator-nodejs .
 ```
-IBM CLoudにログインしてイメージをアップする。(Docker Hubにアップする場合はここは飛ばしてDockerHubにアップロードするを選択してください）
+IBM CLoudにログインして作業を進めていきましょう。
 ```
 $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
@@ -84,7 +85,7 @@ $ docker push jp.icr.io/(任意のネームスペース名)/language-translator-
 
 <img src="images/image_push.png" width="640px">
 
-Docker Hubにイメージをアップロードする
+＊Docker Hubにイメージをアップロードする場合
 ```
 $ docker login
 (Dockerにログイン)
