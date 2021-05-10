@@ -66,7 +66,7 @@ $ ibmcloud target -g Default
 $ ibmcloud plugin install container-registry (必要に応じて）
 $ ibmcloud cr login
 (コンテナーレジストリーにログイン)
-$ ibmcloud cr namespace-add code_engine_ns
+$ ibmcloud cr namespace-add (任意のネームスペース名)
 (ネームスペースの作成)
 $ docker push jp.icr.io/(任意のネームスペース名)/language-translator-nodejs
 （イメージをアップロード、プッシュ）
