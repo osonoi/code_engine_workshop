@@ -85,8 +85,15 @@ Docker Hubにイメージをアップロードする
 ```
 $ docker login
 (Dockerにログイン)
+
+*IBMCloudにアップするためのイメージを作成されている方は以下のコマンドでタグ名を変更してください。
+
 $ docker tag $(docker images jp.icr.io/(任意のネームスペース名)/language-translator-nodejs -q) (Dockerのアカウント名)/language-translator-nodejs
 （DockerイメージのにDockerHubにアップロードするためのタグをつける）
+
+まだイメージを作成したいない方はこちらのコマンドで作成します。
+$ docker build -t (Dockerのアカウント名)/language-translator-nodejs .
+
 $ docker push (Dockerのアカウント名)/language-translator-nodejs
 
 ```
