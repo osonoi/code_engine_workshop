@@ -17,7 +17,6 @@
 こちらからDockerHubのアカウントを作成(Sign up)してください。
  https://hub.docker.com/signup
 
-<img src="images/code-engine.png" width="640px">
 
 ## ワークショップ内容
 Code-EngineにWatson Translatorを使った翻訳アプリをデプロイします。
