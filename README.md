@@ -113,9 +113,14 @@ $ docker push (Dockerのアカウント名)/language-translator-nodejs
 
 <img src="images/deploy5.png" width="640px">
 
-先程アップした時の情報を選択してください。終わったら完了をクリック
+(IBM Cloud container registryの場合）先程アップした時の情報を選択してください。終わったら完了をクリック
 
 <img src="images/deploy6.png" width="640px">
+
+(Docker Hubの場合）先程アップした時の情報を選択してください。終わったら完了をクリック
+
+<img src="images/docker.png" width="640px">
+
 
 アプリ作成の準備ができました。右下の作成をクリック
 
