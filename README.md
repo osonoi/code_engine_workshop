@@ -12,6 +12,9 @@
 　Mac:　https://hub.docker.com/editions/community/docker-ce-desktop-mac<br>
 3.IBM Cloud CLIのインストール<br>
   こちらからインストールしてください。　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja
+4.Docker Hubのアカウント作成(IBM Cloudのコンテナーレジストリーを使用する場合は必要ありません）
+　こちらからDockerHubのアカウントを作成(Sign up)してください。
+ https://hub.docker.com/signup
 
 <img src="images/code-engine.png" width="640px">
 
@@ -33,7 +36,8 @@ ibmcloud (https://cloud.ibm.com) にログインして以下のように”カ�
 サービスが作成されたら認証情報、APIKeyを取得します。API鍵の右側をクリックするとAPI鍵がクリップボードにコピーされます。念のためにメモ帳か何かに入力しておくといいでしょう。
 <img src="images/LT3.png" width="640px">
 
-## 2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成
+## 2. ソースコードのクローン、上記サービスのAPI keyを設定Docker イメージを作成、DockerイメージをIBM CLoud（またはDocker Hub)にアップロード
+
 ソースコードをご自分のPCにクローンしてください
 ```
 $ git clone https://github.com/osonoi/language-translator-nodejs
@@ -57,7 +61,7 @@ Dockerイメージを作成し、後ほどIBM Cloudのレジストリーにあ�
 ```
 $ docker build -t jp.icr.io/(任意のネームスペース名)/language-translator-nodejs .
 ```
-IBM CLoudにログインしてイメージをアップしましょう。
+IBM CLoudにログインしてイメージをアップしましょう。(Docker Hubにアップする場合はここは飛ばしてDockerHubにアップロードするを選択してください）
 ```
 $ ibmcloud login -r jp-tok
 (ログイン用のe-mailアドレス、パスワードを入力してください）
@@ -74,7 +78,17 @@ $ docker push jp.icr.io/(任意のネームスペース名)/language-translator-
 
 <img src="images/image_push.png" width="640px">
 
-## 3. DockerイメージをIBM CLoudにアップロード、Code Engineで稼働させる
+Docker Hubにイメージをアップロードする
+```
+$ docker login
+(Dockerにログイン)
+$ docker tag $(docker images jp.icr.io/(任意のネームスペース名)/language-translator-nodejs -q) (Dockerのアカウント名)/language-translator-nodejs
+（DockerイメージのにDockerHubにアップロードするためのタグをつける）
+$ docker push (Dockerのアカウント名)/language-translator-nodejs
+
+```
+
+## 3. アップロードしたDockerイメージでCode Engineを稼働させる
 
 検索でcode engineと入力してください。Code Engineが出てきたらクリック
 <img src="images/deploy1.png" width="640px">
