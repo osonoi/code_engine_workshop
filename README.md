@@ -117,10 +117,17 @@ $ docker push (Dockerのアカウント名)/language-translator-nodejs
 <img src="images/docker.png" width="640px">
 
 (２のオプションでIBM Cloud container registryの場合）アップした時の情報を選択してください。終わったら完了をクリック
+名前空間は
+名前空間は他の
+名前空間は他のユーザーと
+名前空間は他のユーザーと重ならない
+名前空間は他のユーザーと重ならない、
+名前空間は他のユーザーと重ならない、ユニーク
+名前空間は他のユーザーと重ならない、ユニークな
+名前空間は他のユーザーと重ならない、ユニークな値に
+名前空間は他のユーザーと重ならない、ユニークな値にしたください。
 
 <img src="images/deploy6.png" width="640px">
-
-<img src="images/docker.png" width="640px">
 
 最後に環境変数を設定します。管渠変数は２つ
 LANGUAGE_TRANSLATOR_URL、LANGUAGE_TRANSLATOR_IAM_APIKEY　です。
