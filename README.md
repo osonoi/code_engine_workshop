@@ -108,14 +108,15 @@ $ docker push (Dockerのアカウント名)/language-translator-nodejs
 
 <img src="images/deploy4.png" width="640px">
 
-プロジェクトができたら次はコンテナーイメージの指定です。
+プロジェクトができたら次はコンテナーイメージの構成です。
+
+<img src="images/deploy5.png" width="640px">
+
+以下のように入力してください
 
 <img src="images/docker.png" width="640px">
 
 (２のオプションでIBM Cloud container registryの場合）アップした時の情報を選択してください。終わったら完了をクリック
-
-<img src="images/deploy5.png" width="640px">
-
 
 <img src="images/deploy6.png" width="640px">
 
