@@ -34,7 +34,7 @@ ibmcloud (https://cloud.ibm.com) にログインして以下のように”カ�
 
 <img src="images/LT1.png" width="640px">
 
-無料のプランが選択されているのを確認して”作成”でサービスを作成しtください。
+無料のプランが選択されているのを確認して”作成”でサービスを作成してください。
 
 <img src="images/LT2.png" width="640px">
 
